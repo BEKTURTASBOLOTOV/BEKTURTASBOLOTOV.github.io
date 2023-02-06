@@ -1,0 +1,60 @@
+* {
+  font-family: "roboto", sans-serif;
+  font-family: "Raleway", sans-serif;
+}
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+html {
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+img {
+  list-style: none;
+  display: block;
+}
+body {
+  margin: 0;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+button {
+  cursor: pointer;
+}
+.container {
+  width: 1172px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 480px) and (min-width: 320px) {
+  .container {
+    width: 92%;
+  }
+}

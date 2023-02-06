@@ -1,0 +1,69 @@
+.client {
+  display: block;
+  &__title {
+    justify-content: center;
+    margin-top: 94px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+  }
+  &__link {
+    display: flex;
+    gap: 30px;
+    margin-top: 50px;
+    margin-bottom: 94px;
+  }
+  &__icon::before {
+    display: inline-block;
+    content: "";
+    cursor: pointer;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    width: 170px;
+    height: 92px;
+    color: #afb1b8;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .logo-1:hover {
+    color: #2196f3;
+  }
+}
+.logo-1::before {
+  background-image: url("../icons/Logo1.svg");
+}
+.logo-2::before {
+  background-image: url("../icons/Logo2.svg");
+}
+.logo-3::before {
+  background-image: url("../icons/Logo3.svg");
+}
+.logo-4::before {
+  background-image: url("../icons/Logo4.svg");
+}
+.logo-5::before {
+  background-image: url("../icons/Logo5.svg");
+}
+.logo-6::before {
+  background-image: url("../icons/Logo6.svg");
+}
+@media screen and (max-width: 480px) and (min-width: 320px) {
+  .client {
+    &__title {
+      margin-top: 60px;
+    }
+    &__link {
+      display: grid;
+      grid-template-columns: auto auto;
+    }
+    &__icon::before {
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+}

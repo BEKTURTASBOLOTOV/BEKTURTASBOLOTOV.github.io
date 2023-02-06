@@ -1,0 +1,43 @@
+.work {
+  display: block;
+  &__title {
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: space-around;
+    font-family: "Roboto";
+    font-style: normal;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.03em;
+    color: #212121;
+  }
+  &__img {
+    position: relative;
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    margin-bottom: 94px;
+  }
+  &__text {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 370px;
+    height: 70px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 70px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: rgba(47, 48, 58, 0.8);
+  }
+}
+@media screen and (max-width: 480px) {
+  .work {
+    display: none;
+  }
+}

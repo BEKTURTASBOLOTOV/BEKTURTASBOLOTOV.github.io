@@ -1,0 +1,139 @@
+.team {
+  display: block;
+  padding-top: 94px;
+  background-color: #f5f4fa;
+  &__title {
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 50px;
+    line-height: 42px;
+    letter-spacing: 0.03em;
+    color: #212121;
+  }
+  &__bio {
+    display: flex;
+    padding-bottom: 94px;
+    gap: 30px;
+    justify-content: space-between;
+    background-color: #f5f4fa;
+  }
+  &__img {
+    display: flex;
+    padding: 30px 59px 10px 60px;
+    justify-content: space-around;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    color: #212121;
+  }
+  &__direc {
+    display: block;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #757575;
+  }
+  &__item {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    background-color: #ffffff;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 28px;
+    margin-bottom: 42px;
+  }
+  &__icon {
+    display: inline-flex;
+    gap: 50px;
+    content: "";
+    width: 20px;
+    height: 20px;
+  }
+  &__link {
+    display: inline-flex;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: solid rgba(255, 255, 255, 0) 10px;
+    background-color: #ffffff;
+    fill: #afb1b8;
+  }
+  &__link:hover {
+    border-radius: 50%;
+    border: solid rgba(255, 255, 255, 0) 10px;
+    background-color: #2196f3;
+    fill: #ffffff;
+  }
+  /** ИКОНКИ */
+  &__list {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 28px;
+    margin-bottom: 42px;
+  }
+  &__icon {
+    display: inline-flex;
+    gap: 50px;
+    content: "";
+    width: 20px;
+    height: 20px;
+  }
+  &__link {
+    display: inline-flex;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: solid rgba(255, 255, 255, 0) 10px;
+    background-color: #ffffff;
+    fill: #afb1b8;
+  }
+  &__link:hover {
+    border-radius: 50%;
+    border: solid rgba(255, 255, 255, 0) 10px;
+    background-color: #2196f3;
+    fill: #ffffff;
+  }
+}
+@media screen and (max-width: 480px) and (min-width: 320px) {
+  .team {
+    padding-top: 60px;
+    &__bio {
+      display: block;
+      padding-bottom: 60px;
+    }
+    &__item {
+      height: 100%;
+      margin-bottom: 30px;
+    }
+    &__list {
+      display: flex;
+      justify-content: center;
+      margin-top: 28px;
+      margin-bottom: 36px;
+    }
+    &__item-icon {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 24px;
+    }
+  }
+  img {
+    margin-top: 30px;
+    width: 100%;
+    height: 460px;
+  }
+}

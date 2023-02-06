@@ -1,0 +1,119 @@
+.der {
+  padding: 25px 0;
+  border: 1px solid #ececec;
+  &__wrapper {
+    display: flex;
+  }
+  &__network {
+    color: #2196f3;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    height: 10px;
+    padding-top: 10px;
+    margin-left: auto;
+  }
+  &__list:hover {
+    color: #2196f3;
+  }
+  &__link {
+    display: inline-flex;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    background-repeat: no-repeat;
+    color: #757575;
+  }
+  &__link:hover {
+    color: #2196f3;
+  }
+  &__item::before {
+    display: inline-flex;
+    content: "";
+    cursor: pointer;
+    width: 16px;
+    height: 12px;
+    fill: #757575;
+  }
+  &__title {
+    margin-right: 94px;
+    font-family: "raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: #000000;
+  }
+  &__title:hover {
+    color: #2196f3;
+  }
+  &__nav {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+  &__info {
+    color: #000000;
+  }
+  &__name {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #000000;
+  }
+  &__name:hover {
+    color: #2196f3;
+  }
+  &__btn {
+    display: none;
+  }
+}
+.phone::before {
+  width: 10px;
+  height: 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../icons/phone.svg");
+}
+.email::before {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../icons/email.svg");
+}
+
+/* MOBILE VERSION */
+@media screen and (max-width: 480px) and (min-width: 320px) {
+  .der {
+    &__wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__nav {
+      display: none;
+    }
+    &__list {
+      display: none;
+    }
+    &__btn {
+      display: block;
+      border: none;
+      background-color: transparent;
+    }
+    &__btn:hover {
+      color: #2196f3;
+    }
+    &__title {
+      margin-right: 0;
+    }
+  }
+}

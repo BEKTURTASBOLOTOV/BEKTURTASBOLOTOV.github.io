@@ -1,0 +1,67 @@
+.advan {
+  display: flex;
+  &__list {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+  }
+  &__title {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 10px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #212121;
+  }
+  &__item::before {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 120px;
+    margin-bottom: 30px;
+    background: #f5f4fa;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &__p {
+    display: flex;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    margin-bottom: 94px;
+    color: #757575;
+  }
+}
+.antenna::before {
+  background-image: url("../icons/antenna.svg");
+}
+.clock::before {
+  background-image: url("../icons/clock.svg");
+}
+.diagramma::before {
+  background-image: url("../icons/diagram.svg");
+}
+.astronaut::before {
+  background-image: url("../icons/astronaut.svg");
+}
+@media screen and (max-width: 480px) and (min-width: 320px) {
+  .advan {
+    display: block;
+    width: 100%;
+    &__list {
+      display: inline-block;
+    }
+    &__title {
+      text-align: center;
+    }
+    &__p {
+      margin-bottom: 30px;
+    }
+  }
+}
